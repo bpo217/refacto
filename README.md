@@ -12,9 +12,8 @@ anything so you will have to have X-Code to compile this into a program.
 Here's your readme:
 <br /><br />  
 Proper Usage is: <br />
-'''
-   refacto findString changeString file <extensions> <options>
-'''
+
+    refacto findString changeString file <extensions> <options>
 	
 <br /><br />
 File extensions are not optional.  In order for any files to be renamed 
