@@ -14,7 +14,7 @@
 {
   int result = NSOrderedSame;
   
-  if ([[self pathComponents] count] < [[aString pathComponents] count]) {
+  if ([[self pathComponents] count] > [[aString pathComponents] count]) {
     result = NSOrderedAscending;
   } else if ([[self pathComponents] count] < [[aString pathComponents] count]) {
     result = NSOrderedDescending;
