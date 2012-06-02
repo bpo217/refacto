@@ -21,6 +21,11 @@ Options:<br />
   -nf : Do not rename folders or subfolders<br />
   -ci : Case Insenitive.  Will change all versions of findString<br />
 <br /><br />
+Stand-Alone Options:<br />
+	-h|-help : Basically print this tutorial<br />
+	
+	Example: refacto -h OR refacto -help 
+	<br /><br />
 
 Examples:<br />
 <br />
