@@ -7,7 +7,8 @@ http://stackoverflow.com/questions/10708321/rails-code-refactoring-tool-for-mac/
 I decided it would be fun to make this little tool with a few extra quirks.
 <br /><br />
 refacto was born.  I haven't created an installer or
-anything so you will have to have X-Code to compile this into a program.  
+anything so you will have to have X-Code to compile this into a program.  <br />
+YOU MUST ENABLE GARBAGE COLLECTION WHEN YOU COMPILE THIS
 <br /><br />
 Here's your readme:
 <br /><br />  
