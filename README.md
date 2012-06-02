@@ -38,7 +38,6 @@ Example: <br />
 <br /><br />
 
 Examples:<br />
-<br />
 
     refacto ruby rails erb rb -a
 
