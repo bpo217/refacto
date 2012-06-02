@@ -9,13 +9,12 @@ I decided it would be fun to make this little tool with a few extra quirks.
 In a nutshell: refacto without any options renames all subfolders of
 the current working directory, renames all files in the directory and all sub
 directories, AND finds all instances of the findString INSIDE those files if
-they are openable and renames them.  There is difference whether it's a ruby
+they are openable and renames them.  There is no difference whether it's a ruby
 class, a c++ class, or anything else.  As long as the contents can be opened
 in text format, they will be changed.  
 <br /><br />
-I haven't created an installer or
-anything so you will have to have X-Code to compile this into a program.  <br />
-YOU MUST ENABLE GARBAGE COLLECTION WHEN YOU COMPILE THIS
+No installer exists yet.<br />
+If it wasn't obvious, YOU MUST ENABLE GARBAGE COLLECTION WHEN YOU COMPILE THIS.
 <br /><br />
 Here's your readme:
 <br /><br />  
