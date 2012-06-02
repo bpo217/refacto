@@ -28,6 +28,5 @@
 -(id)initWithArgc:(int)argc argv:(const char *[])argv;
 
 -(void)parse;
--(NSString *)description;
 
 @end

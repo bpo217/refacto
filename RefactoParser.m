@@ -153,10 +153,6 @@ static NSString * const kShowHelpString2 = @"-help";
   }
 }
 
--(NSString *)description
-{
-}
-
 #pragma mark -
 #pragma mark Private General Methods
 
