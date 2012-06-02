@@ -6,7 +6,14 @@ http://stackoverflow.com/questions/10708321/rails-code-refactoring-tool-for-mac/
 <br /><br />
 I decided it would be fun to make this little tool with a few extra quirks.
 <br /><br />
-refacto was born.  I haven't created an installer or
+In a nutshell: refacto without any options renames all subfolders of
+the current working directory, renames all files in the directory and all sub
+directories, AND finds all instances of the findString INSIDE those files if
+they are openable and renames them.  There is difference whether it's a ruby
+class, a c++ class, or anything else.  As long as the contents can be opened
+in text format, they will be changed.  
+<br /><br />
+I haven't created an installer or
 anything so you will have to have X-Code to compile this into a program.  <br />
 YOU MUST ENABLE GARBAGE COLLECTION WHEN YOU COMPILE THIS
 <br /><br />
