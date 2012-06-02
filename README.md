@@ -11,7 +11,7 @@ anything so you will have to have X-Code to compile this into a program.
 <br /><br />
 Here's your readme:
 <br /><br />  
-Proper Usage is: 
+Proper Usage is: <br />
 	refacto findString changeString <file extensions> <options>
 <br /><br />
 File extensions are not optional.  In order for any files to be renamed 
@@ -25,18 +25,21 @@ Options:<br />
 Stand-Alone Options:<br />
   -h|-help : Basically print this tutorial<br />
 	
-	Example: refacto -h OR refacto -help 
+Example: <br />
+	refacto -h
+<br />OR<br />
+	refacto -help 
 <br /><br />
 
 Examples:<br />
 <br />
-	refacto ruby rails erb rb -a <br/>
-<br />
+	refacto ruby rails erb rb -a
+<br /><br />
 - Will touch all folders and subfolders of current directory<br />
 - Will change all instances of ruby to rails (case sensitive)<br />
 - Will touch on all files with .erb and .rb as the last extension<br />
 - Will ask for your approval before each refactor or rename<br />
-
+<br />
 	refacto ruby rails erb rb -rf -ci
 <br/>
 <br />
