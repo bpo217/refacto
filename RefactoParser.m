@@ -187,12 +187,12 @@ static NSString * const kShowHelpString2 = @"-help";
                                                   options:compareOption 
                                                     range:wholeFile];
       
-      if ([self shouldAsk] && 
-          [self askWithQuestion:@"Refactor" forFile:file]) {
-        [newFile writeToFile:file 
-                  atomically:NO 
-                    encoding:NSUTF8StringEncoding 
-                       error:&error];
+      if ([self shouldAsk]) {
+        if ([self askWithQuestion:@"Refactor" forFile:file])
+          [newFile writeToFile:file 
+                    atomically:NO 
+                      encoding:NSUTF8StringEncoding 
+                         error:&error];
         
       } else {
         [newFile writeToFile:file 
@@ -247,14 +247,16 @@ static NSString * const kShowHelpString2 = @"-help";
   if ([manager fileExistsAtPath:file isDirectory:&isDir] && 
       ![file isEqualToString:newFile]) {    
     if (isDir && ![self shouldBeNoFolder]) {
-      if ([self shouldAsk] && [self askWithQuestion:@"Rename" forFile:file]) {
-        [manager moveItemAtPath:file toPath:newFile error:&error];
+      if ([self shouldAsk]) {
+        if ([self askWithQuestion:@"Rename" forFile:file])
+          [manager moveItemAtPath:file toPath:newFile error:&error];
       } else {
         [manager moveItemAtPath:file toPath:newFile error:&error];
       }
     } else if (!isDir && [self shouldChange:[file pathExtension]]) {
-      if ([self shouldAsk] && [self askWithQuestion:@"Rename" forFile:file]) {
-        [manager moveItemAtPath:file toPath:newFile error:&error];
+      if ([self shouldAsk]) {
+        if ([self askWithQuestion:@"Rename" forFile:file])
+          [manager moveItemAtPath:file toPath:newFile error:&error];
       } else {
         [manager moveItemAtPath:file toPath:newFile error:&error];
       }
